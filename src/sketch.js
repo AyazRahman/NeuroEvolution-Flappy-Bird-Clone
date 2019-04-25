@@ -4,6 +4,7 @@ var birds = [];
 var savedBirds = [];
 var pipes = [];
 var counter = 0;
+var generation = 0;
 
 function setup() {
   /* scoreElem = createDiv();
@@ -19,6 +20,7 @@ function setup() {
 function draw() {
   counter++;
   background(0);
+  text("Generation: " + generation, 10, 10);
 
   if (counter % 100 == 0) {
     pipes.push(new Pipe());
@@ -49,6 +51,7 @@ function draw() {
 
   if (!birds.length) {
     nextGeneration();
+    generation++;
   }
 }
 
@@ -93,6 +96,7 @@ function resetSketch() {
   pipes = [];
   pipes.push(new Pipe());
   counter = 0;
+  generation = 0;
   /* scoreElem.html("Score : " + this.bird.score);
   scoreElem.style("color", "white"); */
 }
