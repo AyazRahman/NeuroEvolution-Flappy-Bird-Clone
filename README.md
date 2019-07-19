@@ -1,4 +1,11 @@
 # NeuroEvolution-Flappy-Bird-Clone
-Used NeuroEvolution to train the bird to play flappy bird
+It is a simple web app where I used genetic algorithm and neural network to train a bird to play the Flappy Bird game
 
-used p5.js for drawing and coding the animation and tensorflow.js for creating the neural network
+# What I Learned
+
+* how to work with p5.js
+* how to integrate tensorflow.js into an existing project
+* creating a neural network with tensorflow.js
+* manually changing weights and cloning and copying a network
+* memory management with tensors
+* how to apply genetic algorithm to improve learning
